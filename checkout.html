@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Zenatial - Checkbox</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- Iconfont -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/webfonts/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/webfonts/iconfont/icofont.min.css">
+    <link rel="stylesheet" href="assets/webfonts/flaticon/flaticon.css">
+    
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/asRange.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="theme-bg">
+
+    <!-- Preloader start -->
+    <div class="preloader flex center-center">
+        <img src="assets/img/preloader.gif" alt="preloader img">
+    </div>
+    <!-- Preloader end -->
+
+    <!-- Popup start -->
+    <div class="popup-bg">
+        <div class="popup-overlay"></div>
+        <div class="popup-content flex">
+            <i class="icofont-close close-popup"></i>
+            <div class="img w-100 d-none d-lg-block">
+                <img src="assets/img/popup-img.jpg" alt="popup img">
+            </div>
+            <div class="text p-50 w-100 text-center">
+                <h3>Subscribe and Get 50% Discount</h3>
+                <p>Subscribe to the newsletter to receive updates about new products.</p>
+                <form>
+                    <div class="basic-form">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="subscribe-email"
+                                placeholder="Enter your email">
+                        </div>
+                        <button class="btn w-100">subscribe</button>
+                        
+                        <div class="custom-control custom-checkbox mt-15">
+                            <input type="checkbox" class="custom-control-input" id="dont-show">
+                            <label class="custom-control-label" for="dont-show">Don’t show this message again</label>
+                          </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Popup end -->
+
+    <!-- Search start -->
+    <div class="search" id="search">
+        <i id="search-close" class="icofont-close-line"></i>
+        <form>
+            <input type="search" placeholder="search">
+            <button type="submit"><i class="icofont-search-1"></i></button>
+        </form>
+    </div>
+    <!-- Search end -->
+
+    <!-- Header start -->
+    <div class="screen-overlay"></div>
+    <header class="header white-bg">
+        <div class="top-header pt-10 pb-10 border-bottom">
+            <div class="container flex left-center">
+                <span class="mr-15">Welcome to our store</span>
+                <span> <a href="tel:000880111111"><i class="fas fa-phone-alt mr-5"></i> Call us: +00 123 456 789</a></span>
+                <span class="m-auto"><span class="text-uppercase text-theme">FREE SHIPPING</span> - on all orders over $50</span>
+                <ul class="header-social flex">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bottom-header pb-15 pt-15">
+            <div class="container flex left-center position-relative">
+                <div class="brand-logo">
+                    <a href="index.html">
+                        <img src="assets/img/logo.png" alt="brand logo">
+                    </a>
+                </div>
+                <nav id="navbar_main" class="mobile-offcanvas navbar navbar-expand-lg ml-auto">
+                    <div class="offcanvas-header p-15">
+                        <!-- <button class="btn btn-close float-right">Close</button> -->
+                        <i class="icofont-close btn-close float-right"></i>
+                        <a href="index.html">
+                            <img src="assets/img/logo.png" alt="brand logo">
+                        </a>
+                    </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active"> <a class="nav-link" href="#">Home </a> </li>
+                        <li class="nav-item"><a class="nav-link" href="#">New arrivals</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Women</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Men</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Kids</a></li>
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Best seller</a>
+                            <div class="dropdown-menu megamenu" role="menu">
+                                <div class="row">
+                                    <div class="col-lg-3 p-0 border-right">
+                                        <div class="col-megamenu">
+                                            <h6 class="title">Women's</h6>
+                                            <ul class="list-unstyled">
+                                                <li class="nav-item"><a class="nav-link" href="shop-regular.html">shop regular</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="shop-grid-left.html">shop grid left</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="shop-grid-right.html">shop grid right</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="shop-list-left.html">shop list left</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="shop-list-right.html">shop list right</a></li>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                    <div class="col-lg-3 p-0 border-right">
+                                        <div class="col-megamenu">
+                                            <h6 class="title">Men's</h6>
+                                            <ul class="list-unstyled">
+                                                <li class="nav-item"><a class="nav-link" href="account-dashboard.html">account dashboard</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="shop-list-right.html">shop list right</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="shop-grid-left.html">shop grid left</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="shop-list-left.html">shop list left</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="order-tracking.html">order tracking</a></li>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                    <div class="col-lg-3 p-0 border-right">
+                                        <div class="col-megamenu">
+                                            <h6 class="title">Kid's</h6>
+                                            <ul class="list-unstyled">
+                                                <li class="nav-item"><a class="nav-link" href="blog.html">blog</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="single-blog.html">single blog</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="shop-product-details.html">shop product details</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="delivery-tracking.html">delivery tracking</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="coming-soon.html">coming soon</a></li>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                    <div class="col-lg-3 p-0">
+                                        <div class="col-megamenu border-0">
+                                            <h6 class="title">Accessories</h6>
+                                            <ul class="list-unstyled">
+                                                <li class="nav-item"><a class="nav-link" href="checkout.html">checkout</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="card.html">card</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="wish-list.html">wish list</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="vendor-profile.html">vendor profile</a></li>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                    <div class="col-lg-12 megamenu-footer mt-15">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-6 mb-30 mb-lg-0">
+                                                <div class="content">
+                                                    <img class="img-fluid w-100" src="assets/img/category-2.jpg" alt="card">
+                                                    <div class="text">
+                                                        <span class="text-capitalize">10% off</span>
+                                                        <h4 class="text-capitalize">new arrivals</h4>
+                                                        <a href="#">shop now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-6 mb-30 mb-lg-0">
+                                                <div class="content">
+                                                    <img class="img-fluid w-100" src="assets/img/category-3.jpg" alt="card">
+                                                    <div class="text">
+                                                        <span class="text-capitalize">10% off</span>
+                                                        <h4 class="text-capitalize">new arrivals</h4>
+                                                        <a href="#">shop now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-6 mb-30 mb-lg-0">
+                                                <div class="content">
+                                                    <img class="img-fluid w-100" src="assets/img/category-2.jpg" alt="card">
+                                                    <div class="text">
+                                                        <span class="text-capitalize">10% off</span>
+                                                        <h4 class="text-capitalize">new arrivals</h4>
+                                                        <a href="#">shop now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Pages</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="dropdown-item nav-link" href="about.html">about us</a></li>
+                                <li class="nav-item"><a class="dropdown-item nav-link" href="contact.html">contact us</a></li>
+                                <li class="nav-item"><a class="dropdown-item nav-link" href="error.html">404 error page</a></li>
+                                <li class="nav-item"><a class="dropdown-item nav-link" href="faq.html">FAQ</a></li>
+                                <li class="nav-item"><a class="dropdown-item nav-link" href="login.html">log in</a></li>
+                                <li class="nav-item"><a class="dropdown-item nav-link" href="register.html">register</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="flex right-center icons">
+                    <li><a href="#" id="search-btn"><i class="icofont-search"></i></a></li>
+                    <li><a href="#"><i class="icofont-shopping-cart"></i></a></li>
+                    <li><a href="#"><i class="icofont-user"></i></a></li>
+                    <li><a class="d-block d-lg-none" data-trigger="#navbar_main" href="#"><i class="icofont-navigation-menu"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <!-- Header end -->
+
+    <!-- Banner start -->
+    <section class="page-banner pt-150 pb-140">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="banner-text">
+                        <h2>Checkout Page</h2>
+                        <nav class="breadcrumb">
+                            <ul>
+                                <li><a href="index.html">home</a></li>
+                                <li><a href="shop-regular.html">shop</a></li>
+                                <li><a class="disabled" href="#">checkout</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner end -->
+
+    <!-- Checkout start -->
+    <section class="checkout pt-120 pb-120">
+        <div class="container">
+            <form>
+            <div class="basic-form">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="billing-details">
+                            <p class="running-customer">Returning Customer? <a href="#">Click here to login</a></p>
+                            <h2 class="text-uppercase">billing details</h2>
+                            <p class="mb-40">Etiam nec tortor tempus, auctor mauris non, dictum mauris pellentesque.</p>
+
+                            <div class="row">
+                                <div class="col-lg-6 ">
+                                    <input type="text" class="form-control" placeholder="Name*">
+                                    <div class="invalid-feedback">
+                                        Please provide a valid city.
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" placeholder="Address*">
+                                    <div class="invalid-feedback">
+                                        Please provide a valid city.
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" placeholder="Company*">
+                                    <div class="invalid-feedback">
+                                        Please provide a valid city.
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="email" class="form-control" placeholder="Email*">
+                                    <div class="invalid-feedback">
+                                        Please provide a valid city.
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" placeholder="Mobile*">
+                                    <div class="invalid-feedback">
+                                        Please provide a valid city.
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" placeholder="City/State*">
+                                    <div class="invalid-feedback">
+                                        Please provide a valid city.
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" placeholder="Country*">
+                                    <div class="invalid-feedback">
+                                        Please provide a valid city.
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" placeholder="Zip*">
+                                    <div class="invalid-feedback">
+                                        Please provide a valid city.
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <div class="custom-control custom-checkbox d-inline-block mr-10">
+                                            <input type="checkbox" class="custom-control-input" id="create-account">
+                                            <label class="custom-control-label" for="create-account">Create Account?</label>
+                                          </div>
+                                        <div class="custom-control custom-checkbox d-inline-block">
+                                            <input type="checkbox" class="custom-control-input" id="shipping-address">
+                                            <label class="custom-control-label" for="shipping-address">Ship to a different address</label>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3>order details</h3>
+                        <ul class="mt-50 mb-50 card-price-list">
+                            <li class="list-title pb-20">
+                                <span>Products</span>
+                                <span>Total</span>
+                            </li>
+                            <li>
+                                <span>Subtotal</span>
+                                <span>$2,500.00</span>
+                            </li>
+                            <li>
+                                <span>Shipping</span>
+                                <span>+$200.00</span>
+                            </li>
+                            <li>
+                                <span>Coupon</span>
+                                <span>-$200.00</span>
+                            </li>
+                            <li class="total">
+                                <span>Total</span>
+                                <span>$2,500.00</span>
+                            </li>
+                        </ul>
+                        <h6 class="text-capitalize pb-10">Shipping Location*</h6>
+                        <div class="form-group">
+                            <select class="custom-select shadow-light">
+                                <option value="">Select One Option</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <div class="invalid-feedback">Example invalid custom select feedback</div>
+                        </div>
+                        <h6 class="text-capitalize pb-10 mt-30">Delivery Option*</h6>
+                        <div class="form-group">
+                            <select class="custom-select shadow-light">
+                                <option value="">Select One Option</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <div class="invalid-feedback">Example invalid custom select feedback</div>
+                        </div>
+
+                        <h6 class="text-capitalize pb-10 mt-30">Payment method*</h6>
+                        <div class="accordion" id="payment-collapse">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="custom-control custom-radio">
+                                        <input class="custom-control-input" type="radio" name="payment" id="bank-transfer" value="option1" data-toggle="collapse" data-target="#bank-transfer-collapse">
+                                        <label class="custom-control-label" for="bank-transfer">Direct bank transfer</label>
+                                    </div>
+                                </div>
+                                <div id="bank-transfer-collapse" class="collapse mb-0" data-parent="#payment-collapse">
+                                    <div class="card-body">
+                                        <p>Make your payment directly into our bank acc ount. Please use your Order ID as the payment reference. Your order will not be.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="custom-control custom-radio">
+                                        <input class="custom-control-input" type="radio" name="payment" id="check-pay" value="option1" data-toggle="collapse" data-target="#check-pay-collapse">
+                                        <label class="custom-control-label" for="check-pay">Check payments</label>
+                                    </div>
+                                </div>
+                                <div id="check-pay-collapse" class="collapse mb-0" data-parent="#payment-collapse">
+                                    <div class="card-body">
+                                       <p>Make your payment directly into our bank acc ount. Please use your Order ID as the payment reference. Your order will not be.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="custom-control custom-radio">
+                                        <input class="custom-control-input" type="radio" name="payment" id="cash-on-delivery" value="option1" data-toggle="collapse" data-target="#cash-on-collapse">
+                                        <label class="custom-control-label" for="cash-on-delivery">Cash on delivery</label>
+                                    </div>
+                                </div>
+
+                                <div id="cash-on-collapse" class="collapse mb-0" data-parent="#payment-collapse">
+                                    <div class="card-body">
+                                       <p>Make your payment directly into our bank acc ount. Please use your Order ID as the payment reference. Your order will not be.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="custom-control custom-radio">
+                                        <input class="custom-control-input" type="radio" name="payment" id="mobile-banking" value="option1" data-toggle="collapse" data-target="#mobile-banking-collapse">
+                                        <label class="custom-control-label" for="mobile-banking">Mobile banking</label>
+                                    </div>
+                                </div>
+
+                                <div id="mobile-banking-collapse" class="collapse mb-0" data-parent="#payment-collapse">
+                                    <div class="card-body">
+                                       <p>Make your payment directly into our bank acc ount. Please use your Order ID as the payment reference. Your order will not be.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group mt-30">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">I have read and agree to the website</label>
+                                <a class="text-theme" href="#">terms and conditions</a>
+                            </div>
+                        </div>
+
+                        <div class="order-submission mt-30">
+                            <button class="btn w-100">place your order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+    </section>
+    <!-- Checkout end -->
+
+    <!-- Footer start -->
+    <footer class="footer pt-120">
+        <div class="container pb-120">
+            <div class="row">
+                <div class="mb-30 col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer-logo">
+                        <a href="#">
+                            <img src="assets/img/logo.png" alt="logo">
+                        </a>
+                        <p class="pt-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin
+                            ultrices suscipit. Sed commodo vel mauris vel dapibus. </p>
+                        <h5 class="text-capitalize pb-20">download app</h5>
+                        <a class="shadow mr-20" href="#"><img src="assets/img/app-store-btn.png" alt="download btn"></a>
+                        <a class="shadow" href="#"><img src="assets/img/google-play-btn.png" alt="download btn"></a>
+                    </div>
+                </div>
+                <div class="mb-30 col-lg-2 col-md-3 col-sm-6">
+                    <div class="quick-link">
+                        <h4 class="pb-30">Quick links</h4>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Faq</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Terms of use</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Return policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mb-30 col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer-category">
+                        <h4 class="pb-30">category</h4>
+                        <ul>
+                            <li><a href="#">men</a></li>
+                            <li><a href="#">women</a></li>
+                            <li><a href="#">kids</a></li>
+                            <li><a href="#">new arrival</a></li>
+                            <li><a href="#">best seller</a></li>
+                            <li><a href="#">top rated</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mb-30 col-lg-2 col-md-6 col-sm-6">
+                    <div class="business">
+                        <h4 class="pb-30">Business</h4>
+                        <ul>
+                            <li><a href="#">Be a vendor</a></li>
+                            <li><a href="#">Buy wholesale</a></li>
+                            <li><a href="#">Offer</a></li>
+                            <li><a href="#">Best value</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mb-30 col-lg-3 col-md-6 col-sm-6">
+                    <div class="contact">
+                        <h4 class="pb-30">Contact</h4>
+                        <ul>
+                            <li><i class="fas fa-home"></i>121 King Street, Melbourne Victoria 3000 Australia</li>
+                            <li><i class="far fa-envelope"></i><a href="#">contact@mail.com</a></li>
+                            <li><i class="fas fa-phone-alt"></i>+123 (214) 457 888</li>
+                        </ul>
+                        <div class="footer-social pt-20">
+                            <ul class="flex left-center">
+                                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright card-bg pt-30 pb-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 order-2 order-lg-1">
+                        <div class="copyright-text h-100 flex left-center">
+                            <p class="mb-0 pt-10 pb-10 ">Copyright &copy; 2020. All rights reserved.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 order-1 order-lg-2">
+                        <div class="copyright-card text-center text-lg-right text-xl-right">
+                            <h5>Easy and Secure Payment System</h5>
+                            <img src="assets/img/card-ame.png" alt="payment card">
+                            <img src="assets/img/card-master.png" alt="payment card">
+                            <img src="assets/img/card-nogod.png" alt="payment card">
+                            <img src="assets/img/card-pay.png" alt="payment card">
+                            <img src="assets/img/card-vissa.png" alt="payment card">
+                            <img src="assets/img/card-nogod.png" alt="payment card">
+                            <img src="assets/img/card-bkash.png" alt="payment card">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Back to top start -->
+    <div class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <!-- Back to top end -->
+
+    <!-- JS here -->
+    <script src="assets/js/jquery-2.2.4.min.js" ></script>
+    <script src="assets/js/jquery.rateyo.min.js"></script>
+    <script src="assets/js/mixitup.min.js"></script>
+    <script src="assets/js/simplyCountdown.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery-asRange.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.elevatezoom.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

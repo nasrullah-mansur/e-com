@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Zenatial - Coming soon</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/webfonts/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/webfonts/iconfont/icofont.min.css">
+    <link rel="stylesheet" href="assets/webfonts/flaticon/flaticon.css">
+    
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/asRange.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="coming-soon-bg" style="background-image: url(assets/img/cumming-soon.jpg);">
+
+    <!-- Preloader start -->
+    <div class="preloader flex center-center">
+        <img src="assets/img/preloader.gif" alt="preloader img">
+    </div>
+    <!-- Preloader end -->
+
+<!-- Coming-soon start -->
+<section class="coming-soon">
+    <div class="logo text-center pt-50 pb-50">
+        <a href="index.html">
+            <img src="assets/img/logo.png" alt="logo">
+        </a>
+    </div>
+    <div class="coming-text">
+        <div class="container flex flex-column center-center">
+            <div class="count-items flex justify-content-between flex-wrap" id="count-items">
+                <!-- Keep this empty -->
+            </div>
+            <h5 class="text-white">We are work on something wonderful. Stay in touch.</h5>
+            <div class="basic-form">
+                <div class="form-group">
+                    <input type="email" class="form-control" id="subscribe-email" placeholder="Enter your email">
+                  </div>
+                  <button class="btn w-100">NOTIFY ME</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Coming-soon end -->
+
+
+
+    <!-- JS here -->
+    <script src="assets/js/jquery-2.2.4.min.js" ></script>
+    <script src="assets/js/jquery.rateyo.min.js"></script>
+    <script src="assets/js/mixitup.min.js"></script>
+    <script src="assets/js/simplyCountdown.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery-asRange.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.elevatezoom.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#count-items').simplyCountdown({
+                year: 2020, // required
+                month: 12, // required
+                day: 30, // required
+                /* Options here */
+            });
+        });
+    </script>
+
+</html>
